@@ -1,0 +1,279 @@
+/* css/styles.css */
+/* Fonts classes provided by user */
+.raleway-700 {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.roboto-400 {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.roboto-500 {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.roboto-700 {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+/* Base */
+:root {
+    --bg: #ffffff;
+    --text: #0f1720;
+    --muted: #6b7280;
+    --accent: #0366d6;
+    --gap: 16px;
+    --container-width: 1100px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Layout container */
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+/* Header */
+header {
+    border-bottom: 1px solid #e6edf3;
+    padding: 16px 0;
+    background: #fff;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+}
+
+.brand-link {
+    text-decoration: none;
+    color: var(--accent);
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 12px;
+    margin-left: auto;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--text);
+    padding: 6px 8px;
+    border-radius: 6px;
+}
+
+/* interactive states for links and buttons */
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--accent);
+    outline: none;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+    color: var(--accent);
+    outline: none;
+}
+
+/* Contacts */
+.contacts {
+    margin-top: 8px;
+}
+
+.contacts-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 12px;
+}
+
+/* Hero */
+.hero {
+    padding: 40px 0;
+}
+
+.hero-title {
+    margin: 0 0 16px 0;
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.btn-order {
+    padding: 10px 16px;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+    background: #f6f8fa;
+    cursor: pointer;
+}
+
+/* button hover/focus */
+.btn-order:hover,
+.btn-order:focus {
+    background: var(--accent);
+    color: #fff;
+    outline: none;
+}
+
+/* Advantages */
+.section-title {
+    margin: 0 0 12px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.advantages-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.advantage-item {
+    margin-bottom: 16px;
+}
+
+.advantage-title {
+    margin: 0 0 6px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.advantage-text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Team */
+.team-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.team-item {
+    list-style: none;
+    width: 264px;
+}
+
+.team-photo {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.team-name {
+    margin: 8px 0 4px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.team-role {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* Portfolio (stacked items, divs only) */
+.portfolio {
+    margin-top: 24px;
+}
+
+.portfolio-item {
+    margin-bottom: 24px;
+}
+
+.portfolio-figure {
+    margin: 0;
+}
+
+.portfolio-thumb {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-caption {
+    margin-top: 8px;
+}
+
+.portfolio-title {
+    margin: 0 0 4px 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.portfolio-category {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid #e6edf3;
+    padding: 16px 0;
+    margin-top: 32px;
+}
+
+.footer-text {
+    margin: 8px 0 0 0;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* Accessibility helper */
+.visually-hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+}
